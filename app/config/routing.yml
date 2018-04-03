@@ -1,0 +1,17 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+index:
+    path: /
+    defaults: {_controller: AppBundle:Test:index}
+pay:
+    path: /pay
+    defaults: {_controller: AppBundle:Test:pay}
+
+pay_success:
+    path: /pay/done
+    defaults: {_controller: AppBundle:Test:paySuccess}
+
+refund:
+    path: /pay/refund
+    defaults: {_controller: AppBundle:Test:refund}
